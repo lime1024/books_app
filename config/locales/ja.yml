@@ -1,0 +1,35 @@
+ja:
+  activerecord:
+    attributes:
+      book:
+        title: 作品名
+        memo: 備考
+        author: 著者
+        picture: 画像
+      user:
+        avatar: プロフィール写真
+  show: 詳細
+  edit: 編集
+  destroy: 削除
+  new: 登録
+  back: 戻る
+  book: 本一覧
+  editing_book: 編集
+  new_book: 登録
+  views:
+    pagination:
+      first: 最初
+      previous: 前へ
+      next: 次へ
+      last: 最後
+  sign_up: アカウント登録
+  github_sign_up: GitHubでログイン
+  login: ログイン
+  logged_in_as: ログイン中
+  edit_prof: アカウント修正
+  logout: ログアウト
+  update: 更新
+  cancel: アカウント削除
+  unhappy: 本当に削除しますか？
+  forgot_pass: パスワードをお忘れですか？
+  send: パスワードをリセットします
