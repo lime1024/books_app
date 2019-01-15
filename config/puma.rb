@@ -36,4 +36,4 @@ environment ENV.fetch("RAILS_ENV") { "development" }
 plugin :tmp_restart
 
 # socket の設定
-bind "unix://lime1024/books_app/tmp/sockets/puma.sock"
+bind "unix:///var/www/books_app/shared/tmp/sockets/puma.sock"
