@@ -35,8 +35,12 @@ gem "mini_magick", "~> 4.8"
 
 # Use Capistrano for deployment
 group :deveropment do
+  gem 'whenever', require: false
   gem 'capistrano', "~> 3.10", require: false
   gem 'capistrano-rails', "~> 1.4", require: false
+  gem 'capistrano-rbenv', require: false
+  gem 'capistrano-bundler', require: false
+  gem 'capistrano3-puma', require: false
 end
 
 # Reduces boot times through caching; required in config/boot.rb

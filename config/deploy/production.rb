@@ -5,7 +5,7 @@
 
 # server "example.com", user: "deploy", roles: %w{app db web}, my_property: :my_value
 # server "example.com", user: "deploy", roles: %w{app web}, other_property: :other_value
-# server "db.example.com", user: "deploy", roles: %w{db}
+server "www.lime.kirikiriyamama.com:10246", user: "lime1024", roles: %w{app}
 
 
 
@@ -41,11 +41,11 @@
 #
 # Global options
 # --------------
-#  set :ssh_options, {
-#    keys: %w(/home/rlisowski/.ssh/id_rsa),
-#    forward_agent: false,
-#    auth_methods: %w(password)
-#  }
+set :ssh_options, {
+  keys: %w(~/.ssh/id_rsa),
+  forward_agent: true,
+  auth_methods: %w(publickey)
+ }
 #
 # The server-based syntax can be used to override options:
 # ------------------------------------
@@ -58,4 +58,4 @@
 #     forward_agent: false,
 #     auth_methods: %w(publickey password)
 #     # password: "please use keys"
-#   }
+#   }}
